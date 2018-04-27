@@ -48,6 +48,8 @@ public class UserInput1 {
 			length = dob.length();
 			isLength = length == 10;
 			
+			// **************** FIX to make sure no error when inputting example: 044-0505-505050. Recommend to use substring to find if values are numeric before converting *******************
+			
 			// Values of MM, DD, YYYY 
 			month = Integer.parseInt(dob.substring(0,2));
 			day = Integer.parseInt(dob.substring(3,5));
@@ -60,7 +62,7 @@ public class UserInput1 {
 			
 			System.out.println();
 			
-			// **************** FIX to make sure no error when inputting example: 044-0505-505050 *******************
+			
 			/**
 			 * Check YYYY
 			 */
